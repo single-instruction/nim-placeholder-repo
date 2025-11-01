@@ -1,2 +1,0 @@
-type
-  Address* = distinct int

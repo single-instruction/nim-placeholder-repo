@@ -1,7 +1,8 @@
-import ./types
+import ./foo
+import ./bar
 import results
-import ./addresses
 
-proc makeReceipt(vmState: BaseVMState) =
-  var contractAddr = default(Address)
-  vmState.txCtx.contractAddress = Opt.some(contractAddr)
+var tmp = default(Foo)
+var field: Opt[Foo]
+
+field = Opt.some(tmp)
